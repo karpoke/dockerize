@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+# https://hub.docker.com/_/node/
+
+/usr/bin/docker run \
+    --entrypoint node \
+    --interactive \
+    --net host \
+    --rm \
+    --tty \
+    --user $(id -u):$(id -g) \
+    --volume $PWD:/workdir \
+    --workdir /workdir \
+    node:latest "$@"
