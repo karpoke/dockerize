@@ -8,7 +8,7 @@
     --net host \
     --rm \
     --tty \
-    --user $(id -u):$(id -g) \
-    --volume $PWD:/workdir \
+    --user "$(id -u)":"$(id -g)" \
+    --volume "$PWD:/workdir" \
     --workdir /workdir \
     node:latest "$@"
