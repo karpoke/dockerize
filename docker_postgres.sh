@@ -12,7 +12,7 @@ mkdir -p "$HOME/docker/volumes"
 
 # acceso mediante IP y socket
 #docker inspect postgres >/dev/null 2>&1 || docker run \
-docker ps | grep -q postgres-docker || docker run \
+docker ps | grep -q docker-postgres || docker run \
     --rm \
     --name docker-postgres \
     -h postgres \
