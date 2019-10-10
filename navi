@@ -8,4 +8,4 @@
 docker run \
     -it \
     --rm \
-    navi --print "$@"
+    karpoke/navi "$@"
