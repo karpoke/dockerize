@@ -5,6 +5,9 @@
 # install
 # docker pull karpoke/navi
 
+# navi search nmap
+# navi query systemctl
+# navi widget bash
 docker run \
     -it \
     --rm \
