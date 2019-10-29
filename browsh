@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+# https://github.com/browsh-org/browsh
+# https://hub.docker.com/r/browsh/browsh
+
+/usr/bin/docker run \
+    -it \
+    --rm \
+    browsh/browsh
