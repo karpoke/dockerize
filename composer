@@ -3,10 +3,9 @@
 # https://hub.docker.com/_/composer/
 
 /usr/bin/docker run \
-    --interactive \
-    --net host \
+    -it \
     --rm \
-    --tty \
+    --net host \
     --user "$(id -u)":"$(id -g)" \
     --volume "$PWD:/workdir" \
     --workdir /workdir \

@@ -3,11 +3,10 @@
 # https://hub.docker.com/_/node/
 
 /usr/bin/docker run \
-    --entrypoint yarn \
-    --interactive \
-    --net host \
+    -it \
     --rm \
-    --tty \
+    --entrypoint yarn \
+    --net host \
     --user "$(id -u)":"$(id -g)" \
     --volume "$PWD:/workdir" \
     --workdir /workdir \

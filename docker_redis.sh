@@ -7,13 +7,13 @@
 
 # all redis.conf params can be passed as arguments
 
-mkdir -p $HOME/docker/volumnes
+mkdir -p "$HOME/docker/volumnes"
 
-docker ps | grep -q docker-redis || docker run \
+/usr/bin/docker ps | grep -q docker-redis || /usr/bin/docker run \
     --rm \
     --name docker-redis \
     -h redis \
     -d \
     -p 6379:6379 \
-    -v $HOME/docker/volumes/redis:/data \
+    -v "$HOME/docker/volumes/redis":/data \
     redis redis-server --databases 4096

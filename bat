@@ -3,10 +3,7 @@
 # https://hub.docker.com/r/danlynn/bat/
 # https://github.com/sharkdp/bat
 
-# install
-# docker pull karpoke/bat
-
-docker run \
+/usr/bin/docker run \
     -it \
     --rm \
     -e BAT_THEME \

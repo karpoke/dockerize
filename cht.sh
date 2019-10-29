@@ -2,10 +2,7 @@
 
 # https://github.com/chubin/cheat.sh
 
-# install
-# docker pull karpoke/cheat.sh
-
-docker run \
+/usr/bin/docker run \
     -it \
     --rm \
     karpoke/cheat.sh "$@"

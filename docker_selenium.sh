@@ -1,12 +1,9 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 # https://hub.docker.com/r/selenium/standalone-chrome
 # https://github.com/SeleniumHQ/docker-selenium
 
-# install
-# docker pull selenium/standalone-chrome
-
-docker run \
+/usr/bin/docker run \
     --rm \
     --name docker-selenium \
     -h selenium \
