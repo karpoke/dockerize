@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+# https://github.com/jarun/googler
+
+/usr/bin/docker run \
+    -it \
+    --rm \
+    karpoke/googler "$@"
