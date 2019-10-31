@@ -7,7 +7,7 @@
 
 # all redis.conf params can be passed as arguments
 
-mkdir -p "$HOME/docker/volumnes"
+mkdir -p "$HOME/docker/volumes"
 
 /usr/bin/docker ps | grep -q docker-redis || /usr/bin/docker run \
     --rm \
