@@ -10,7 +10,7 @@
 
 mkdir -p "$HOME/docker/volumes"
 
-# psql -h 127.0.0.1 -U postgres
+# psql -h localhost -U postgres
 
 # acceso mediante IP y socket
 /usr/bin/docker ps | grep -q docker-postgres || /usr/bin/docker run \
