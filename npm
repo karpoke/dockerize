@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # https://hub.docker.com/_/node/
 

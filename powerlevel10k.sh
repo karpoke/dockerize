@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # https://github.com/romkatv/powerlevel10k
 

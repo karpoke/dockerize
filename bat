@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # https://hub.docker.com/r/danlynn/bat/
 # https://github.com/sharkdp/bat
