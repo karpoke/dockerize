@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# https://hub.docker.com/r/lazyteam/lazydocker
+# https://github.com/jesseduffield/lazydocker
+
+/usr/bin/docker run \
+    -it \
+    --rm \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v ~/lazydocker:/.config/jesseduffield/lazydocker \
+    lazyteam/lazydocker
