@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# https://github.com/psf/black
+# https://hub.docker.com/r/pyfound/black
+
+/usr/bin/docker run \
+    -it \
+    --rm \
+    --entrypoint black \
+    --user "$(id -u)":"$(id -g)" \
+    -v "$PWD":/code \
+    --workdir /code \
+    pyfound/black "$@"
+
