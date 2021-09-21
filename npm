@@ -3,7 +3,7 @@
 # https://hub.docker.com/_/node/
 
 /usr/bin/docker run \
-    -it \
+    -i \
     --rm \
     --entrypoint npm \
     --net host \
