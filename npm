@@ -2,6 +2,8 @@
 
 # https://hub.docker.com/_/node/
 
+# docker pull node:17.0.1
+
 /usr/bin/docker run \
     -i \
     --rm \
@@ -10,4 +12,4 @@
     --user "$(id -u)":"$(id -g)" \
     --volume "$PWD:/workdir" \
     --workdir /workdir \
-    node:latest "$@"
+    node:17.0.1 "$@"

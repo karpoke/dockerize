@@ -3,12 +3,13 @@
 # https://github.com/psf/black
 # https://hub.docker.com/r/pyfound/black
 
+# docker pull pyfond/black:21.9b0
+
 /usr/bin/docker run \
-    -i \
+    -it \
     --rm \
     --entrypoint black \
     --user "$(id -u)":"$(id -g)" \
-    -v "$PWD":/code \
-    --workdir /code \
-    pyfound/black "$@"
-
+    -v "$PWD":/workdir \
+    --workdir /workdir \
+    pyfound/black:21.9b0 "$@"
