@@ -2,7 +2,7 @@
 
 # https://hub.docker.com/_/node/
 
-# docker pull node:17.0.1
+# docker pull node:16.3.0  # latest lts
 
 /usr/bin/docker run \
     -it \
@@ -12,4 +12,4 @@
     --user "$(id -u)":"$(id -g)" \
     --volume "$PWD:/workdir" \
     --workdir /workdir \
-    node:17.0.1 "$@"
+    node:16.3.0 "$@"
